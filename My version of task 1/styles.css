@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    margin:10px;
+    padding: 0;
+
+
+}
+
+.rotate{
+ transform: rotate(90deg) translate(400px) translateZ(1000px);
+  text-align: center;
+  height:100px;
+  width:auto;
+  opacity:0.8;
+}
+
+
+.list{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    min-height:100vh;
+    perspective: 1000px;
+}
+
+.list img{
+border-radius: 40px;
+width:500px;
+height:auto;
+transition:  0.7s ease;
+}
+
+.list:hover img{
+    filter: blur(20px) brightness(0.5);
+
+}
+
+.list img:hover{
+transform:translateZ(100px);
+filter:none;
+transform:scale(1.5);
+transform-style: preserve-3d;
+}
+
+h1{
+    font-family:"Caveat Brush",cursive;
+    color:rgb(11, 228, 116);
+    font-size: 300px;
+    text-align:center;
+    opacity:0.7;
+    transform:translateY(-50px);
+}
